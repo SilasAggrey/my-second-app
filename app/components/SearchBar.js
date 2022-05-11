@@ -1,0 +1,30 @@
+import React from 'react' ;
+import {View, TextInput,StyleSheet,SafeAreaView} from 'react-native';
+
+const SearchBar = () => {
+    return (
+        <View style={styles.container}>
+            <TextInput style={styles.SearchInput} placeholder='Search here...' />
+        </View>
+    )
+}
+
+const styles = StyleSheet.create({
+    container: {
+        width: '100%',
+        height: 50,
+        backgroundColor: 'white',
+        borderRadius: 8,
+        justifyContent: 'center',
+        alignContent: 'center',
+    },
+    SearchInput:{
+        width: '100%' ,
+        height: '50%',
+        paddingLeft: 8,
+        fontSize: 16,
+
+    }
+})
+
+export default SearchBar;
