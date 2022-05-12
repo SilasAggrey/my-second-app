@@ -2,8 +2,9 @@ import { View, StyleSheet, StatusBar,Text, } from 'react-native'
 import React from 'react'
 
 const Screen = ({children}) => {
-  return <View style={styles.container}>{children}
-  <Text style={{ fontSize: 50, fontWeight: "bold", color: 'white'}}>Google</Text>
+  return <View style={styles.container}>
+  <Text style={{ fontSize: 50, fontWeight: "bold", color: 'white',textAlign: "center"}}>Google</Text>
+  {children}
   </View>;
   
 };
@@ -13,7 +14,9 @@ const styles = StyleSheet.create({
         maginTop: StatusBar.currentHeight,
         paddingHorizontal: 30,
         backgroundColor: 'black',
-        flex: 1
+        flex: 1,
+        justifyContent: "center",
+        alignContent: "center",
     },
 });
 
